@@ -386,3 +386,179 @@ footer{border-top:1px solid var(--line);padding:32px 0;margin-top:20px}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
 .confirm-actions{display:flex;gap:10px;margin-top:20px}
+
+/* ============================================================
+   RESPONSIVIDADE
+============================================================ */
+
+/* Tablets */
+@media (max-width: 992px){
+
+    .wrap{
+        padding:0 20px;
+    }
+
+    .hero{
+        padding:40px 0;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* Celulares */
+@media (max-width:768px){
+
+    header{
+        position:relative;
+    }
+
+    .header-inner{
+        flex-direction:column;
+        gap:20px;
+        padding:18px;
+    }
+
+    nav{
+        width:100%;
+        justify-content:center;
+    }
+
+    .nav-links{
+        display:flex !important;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px !important;
+    }
+
+    .admin-bar{
+        width:100%;
+        justify-content:center;
+    }
+
+    .hero{
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p.lead{
+        margin:auto;
+        margin-bottom:25px;
+    }
+
+    .cta-row{
+        justify-content:center;
+    }
+
+    .compare{
+        max-width:550px;
+        margin:auto;
+    }
+
+    .section-head{
+        text-align:center;
+        margin:auto;
+        margin-bottom:35px;
+    }
+
+    .section-head p{
+        margin:auto;
+        margin-top:10px;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .trust{
+        grid-template-columns:1fr;
+    }
+
+    .stat-row{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .contact{
+        padding:30px 20px;
+    }
+
+    .contact-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+
+/* Smartphones pequenos */
+@media (max-width:480px){
+
+    .wrap{
+        padding:0 15px;
+    }
+
+    .hero h1{
+        font-size:31px;
+    }
+
+    .section-head h2{
+        font-size:28px;
+    }
+
+    .about-copy h2{
+        font-size:28px;
+    }
+
+    .contact h2{
+        font-size:28px;
+    }
+
+    .btn{
+        width:100%;
+        justify-content:center;
+    }
+
+    .cta-row{
+        flex-direction:column;
+    }
+
+    .upload-row{
+        grid-template-columns:1fr;
+    }
+
+    .modal{
+        padding:22px;
+        width:95%;
+    }
+
+    .compare{
+        aspect-ratio:1/1;
+    }
+
+}
